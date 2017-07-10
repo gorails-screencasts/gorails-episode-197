@@ -1,0 +1,17 @@
+<h1>Subscribe</h1>
+
+<%= form_tag subscription_path, id: "payment-form" do |form| %>
+  <div class="form-row">
+    <label for="card-element">
+      Credit or debit card
+    </label>
+    <div id="card-element" class="form-control">
+      <!-- a Stripe Element will be inserted here. -->
+    </div>
+
+    <!-- Used to display Element errors -->
+    <div id="card-errors" role="alert"></div>
+  </div>
+
+  <button>Submit Payment</button>
+<% end %>

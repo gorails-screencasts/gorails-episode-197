@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Secret:</strong>
+  <%= @product.secret %>
+</p>
+
+<%= link_to "Subscribe", new_subscription_path, class: "btn btn-primary" %>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
